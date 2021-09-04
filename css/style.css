@@ -41,6 +41,8 @@ nav ul {
 
 nav ul li {
   padding: 0 2rem;
+  -webkit-animation: zoomin 1s ease;
+          animation: zoomin 1s ease;
 }
 
 nav .active {
@@ -64,6 +66,28 @@ a {
 
 a:hover {
   color: #2FD4C9;
+}
+
+@-webkit-keyframes zoomin {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoomin {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 h1 {
