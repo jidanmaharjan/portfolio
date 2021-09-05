@@ -23,6 +23,10 @@ body{
     font-size: 1.5rem;
     font-weight: 575;
     cursor: url(../assets/cursor.png), auto;
+    background: $background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav{
@@ -33,7 +37,7 @@ nav{
     padding: 1.5rem;
     background: $background-color;
     box-shadow: 0 .5rem 1rem 0 $background-color-dark;
-    
+    z-index: 5;
     ul{
         list-style: none;
         display: flex;
@@ -53,6 +57,7 @@ nav{
 .logo{
     font-family: 'Pacifico', cursive;
     font-size: 2rem;
+    padding: 0 2rem;
 }
 // .special{
 //     background: $primary-color;
@@ -74,6 +79,181 @@ a{
     cursor: url(../assets/cursor.png), auto;
     &:hover{
         color: $primary-color;
+    }
+}
+
+.bodysizer{
+    width: 90%;
+}
+
+.linkbuttons{
+    a{
+        padding: 1.5rem 2rem;
+        background: $primary-color;
+        margin-right: 2rem;
+        color: $text-color-reverse;
+        border-radius: .5rem;
+        transition: .3s;
+    }
+    .primarybtn{
+        border: 1px solid $primary-color;
+        &:hover{
+            background: transparent;
+            color: $primary-color;
+        }
+    }
+    .secondarybtn{
+        border: 1px solid $primary-color;
+        background: transparent;
+        color: $primary-color;
+        &:hover{
+            background: $primary-color;
+            color: $text-color-reverse;
+        }
+    }
+}
+
+//Home section
+.home{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+    .sociallinks{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 5%;
+        img{
+            width: 3rem;
+            
+        }
+    }
+    .homecontent{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-basis: 90%;
+        
+        .homedescription{
+            flex-basis: 50%;
+            h1{
+                margin-bottom: 1rem;
+            }
+            h4{
+                margin-bottom: 3rem;
+            }
+        }
+        img{
+            flex-basis: 40%;
+            width: 100%;
+            height: 90vh;     
+            object-fit: contain;
+            align-self: flex-end;
+        }
+    }
+    .first{
+        animation: fadein1s 7s step-end;
+    }
+    .second{
+        animation: fadein2s 7s step-end; 
+    }
+    .secondimg{
+        animation: imagetranslate 7s ease;
+    }
+    .third{
+        animation: textpop 7s ease;
+    }
+    .fourth{
+        animation: buttonanimation 7s ease;
+    } 
+    .fifth{
+        animation: topbottom 7s ease;
+    } 
+    
+}
+
+//about section
+.about{
+    
+}
+@keyframes topbottom{
+    0%{
+        transform: translateY(-5rem);
+        opacity: 0;
+    }
+    56%{
+        transform: translateY(-5rem);
+        opacity: 0;
+    }
+    70%{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes buttonanimation{
+    0%{
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+    56%{
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+    70%{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes textpop{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    42%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    56%{
+        transform: scale(1);
+        opacity: 100%;
+    }
+}
+
+@keyframes imagetranslate{
+    0%{
+        opacity: 0;
+        transform: translateX(5rem);
+    }
+    28%{
+        opacity: 0;
+        transform: translateX(5rem);
+    }
+    42%{
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadein1s{
+    0%{
+        opacity: 0;
+    }
+    14%{
+        opacity: 100%;
+    }
+}
+@keyframes fadein2s{
+    0%{
+            opacity: 0;
+    }
+    28%{
+            opacity: 100%;
     }
 }
 
