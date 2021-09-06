@@ -18,3 +18,15 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+let toggle = 0;
+function navtoggle(){
+  if(toggle == 0){
+    btnContainer.style.top= "5rem";
+    toggle=1;
+  }
+  else{
+    btnContainer.style.top= "-100%";
+    toggle=0;
+  }
+}

@@ -38,6 +38,8 @@ nav{
     background: $background-color;
     box-shadow: 0 .5rem 1rem 0 $background-color-dark;
     z-index: 5;
+    position: fixed;
+    top: 0;
     ul{
         list-style: none;
         display: flex;
@@ -46,11 +48,44 @@ nav{
             animation: zoomin 1s ease;
         }
     }
+    img{
+        width: 3.5rem;
+        margin: 0 2rem;
+        display: none;
+    }
     .active{
         color: $primary-color;
         &:hover{
             color: $primary-color-dark;
         }
+    }
+}
+
+@media(max-width:800px)
+{
+    nav{
+        z-index: 7;
+        padding: 1rem;
+        ul{
+            transition: .5s;
+            top: -100%;
+            
+            width: 100%;
+            position: fixed;
+            flex-direction: column;
+            background: $background-color;
+            padding: 1rem;
+            box-shadow: 0 .1rem .1rem 0 $background-color-dark;
+            li{
+                padding: .5rem 2rem;
+            }
+        }
+        img{
+            display: inline;
+        }
+    }
+    #navLinks{
+        z-index: 3;
     }
 }
 
@@ -85,6 +120,14 @@ a{
 .bodysizer{
     width: 90%;
 }
+@media(max-width: 800px)
+{
+    .bodysizer{
+      width: 100%;
+    padding: 2rem;  
+    }
+    
+}
 
 .linkbuttons{
     a{
@@ -116,7 +159,7 @@ a{
 //Home section
 .home{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -137,20 +180,20 @@ a{
         align-items: center;
         justify-content: space-between;
         flex-basis: 90%;
-        
+        height: 100vh;
         .homedescription{
             flex-basis: 50%;
             h1{
                 margin-bottom: 1rem;
             }
             h4{
-                margin-bottom: 3rem;
+                margin-bottom: 4rem;
             }
         }
         img{
             flex-basis: 40%;
             width: 100%;
-            height: 90vh;     
+            height: 85%;    
             object-fit: contain;
             align-self: flex-end;
         }
@@ -174,6 +217,47 @@ a{
         animation: topbottom 7s ease;
     } 
     
+}
+@media(max-width:800px)
+{
+    .home{
+        flex-direction: column-reverse;
+        justify-content: center;
+        .sociallinks{
+            width: 70%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            a{
+              padding: 0 1rem;
+              
+            }
+            
+        }
+        .homecontent{
+            flex-direction: column-reverse;
+            justify-content: center;
+            flex-basis: 70%;
+            margin-bottom: 4rem;
+            .homedescription{
+                flex-basis: 40%;
+                h1{
+                    font-size: 5.5rem;
+                }
+                h4{
+                    font-size: 3rem;
+                }
+                
+            }
+            img{
+                height: 40vh;
+                width: fit-content;
+                object-fit: scale-down;
+                justify-self: center;
+                align-self: center;
+            }
+        }
+    }
 }
 
 //about section
