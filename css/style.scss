@@ -226,7 +226,7 @@ a{
 {
     .home{
         flex-direction: column-reverse;
-        justify-content: space-around;
+        justify-content: center;
         .sociallinks{
             width: 70%;
             
@@ -243,14 +243,25 @@ a{
             flex-direction: column-reverse;
             justify-content: center;
             flex-basis: 50%;
-            height: 90vh;
+            height: 85vh;
             .homedescription{
                 flex-basis: 40%;
+                text-align: center;
                 h1{
                     font-size: 5.5rem;
                 }
                 h4{
                     font-size: 3rem;
+                }
+                .linkbuttons{
+                    .primarybtn{
+                        margin: 0;
+                        margin-right: .5rem;
+                    }
+                    .secondarybtn{
+                        margin: 0;
+                        margin-left: .5rem;
+                    }
                 }
                 
             }

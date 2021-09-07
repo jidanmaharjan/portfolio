@@ -273,8 +273,9 @@ a:hover {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .home .sociallinks {
     width: 70%;
@@ -301,17 +302,26 @@ a:hover {
             justify-content: center;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-    height: 90vh;
+    height: 85vh;
   }
   .home .homecontent .homedescription {
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
+    text-align: center;
   }
   .home .homecontent .homedescription h1 {
     font-size: 5.5rem;
   }
   .home .homecontent .homedescription h4 {
     font-size: 3rem;
+  }
+  .home .homecontent .homedescription .linkbuttons .primarybtn {
+    margin: 0;
+    margin-right: .5rem;
+  }
+  .home .homecontent .homedescription .linkbuttons .secondarybtn {
+    margin: 0;
+    margin-left: .5rem;
   }
   .home .homecontent img {
     height: 40vh;
