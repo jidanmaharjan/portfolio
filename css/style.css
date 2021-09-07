@@ -279,6 +279,7 @@ a:hover {
   }
   .home .sociallinks {
     width: 70%;
+    height: 10%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -302,7 +303,7 @@ a:hover {
             justify-content: center;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-    height: 85vh;
+    height: 80vh;
   }
   .home .homecontent .homedescription {
     -ms-flex-preferred-size: 40%;
