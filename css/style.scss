@@ -15,10 +15,17 @@ $text-color-reverse: #fff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
-    font-style: normal;
+    
+    
     
 }
+@font-face {
+    font-family: 'Quicksand', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap");
+    font-style: normal;
+    font-weight: 600;
+}
+
 body{
     color: $text-color;
     font-size: 1.5rem;

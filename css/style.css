@@ -3,8 +3,13 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@font-face {
   font-family: 'Quicksand', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap");
   font-style: normal;
+  font-weight: 600;
 }
 
 body {
