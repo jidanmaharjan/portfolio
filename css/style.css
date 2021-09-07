@@ -273,13 +273,12 @@ a:hover {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .home .sociallinks {
     width: 70%;
-    margin-top: 2rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -303,7 +302,7 @@ a:hover {
             justify-content: center;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-    height: 80vh;
+    height: 90vh;
   }
   .home .homecontent .homedescription {
     -ms-flex-preferred-size: 40%;
