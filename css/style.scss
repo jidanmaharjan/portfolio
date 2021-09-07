@@ -15,15 +15,8 @@ $text-color-reverse: #fff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Quicksand','Rubik', sans-serif;
     
-    
-    
-}
-@font-face {
-    font-family: 'Quicksand', sans-serif;
-    src: url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap");
-    font-style: normal;
-    font-weight: 600;
 }
 
 body{
@@ -250,7 +243,7 @@ a{
             flex-direction: column-reverse;
             justify-content: center;
             flex-basis: 50%;
-            height: 75vh;
+            height: 80vh;
             .homedescription{
                 flex-basis: 40%;
                 h1{
