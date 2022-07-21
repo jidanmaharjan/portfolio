@@ -190,6 +190,13 @@ a:hover {
 
 .home .sociallinks img {
   width: 3rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.home .sociallinks img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .home .homecontent {
@@ -404,7 +411,7 @@ a:hover {
   }
 }
 
-.workssection h2 {
+.workssection h3 {
   text-align: center;
   padding: 3rem 0;
   padding-top: 7rem;
@@ -463,7 +470,7 @@ a:hover {
   }
 }
 
-.contactsection h2 {
+.contactsection h3 {
   text-align: center;
   padding: 3rem 0;
   padding-top: 7rem;
@@ -487,16 +494,22 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30%;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 2rem 5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 30%;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding: 1rem 3rem;
   border-radius: 1rem;
 }
 
 .contact .card:hover {
-  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .contact .card a {

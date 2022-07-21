@@ -141,6 +141,7 @@ a{
         color: $text-color-reverse;
         border-radius: .5rem;
         transition: .3s;
+        
     }
     .primarybtn{
         border: 1px solid $primary-color;
@@ -175,6 +176,10 @@ a{
         
         img{
             width: 3rem;
+            transition: .3s;
+            &:hover{
+                transform: scale(1.2);
+            }
             
         }
     }
@@ -372,7 +377,7 @@ a{
 
 .workssection{
     
-    h2{
+    h3{
         text-align: center;
         padding: 3rem 0;
         padding-top: 7rem;
@@ -421,7 +426,7 @@ a{
 }
 
 .contactsection{
-    h2{
+    h3{
         text-align: center;
         padding: 3rem 0;
         padding-top: 7rem;
@@ -436,12 +441,16 @@ a{
     gap: 2rem;
     .card{
         display: flex;
-        width: 30%;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        padding: 2rem 5rem;
+        flex-wrap: wrap;
+        min-width: 30%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        transition: .3s;
+        padding: 1rem 3rem;
         border-radius: 1rem;
         &:hover{
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            transform: scale(1.02);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
         a{
             display: flex;
