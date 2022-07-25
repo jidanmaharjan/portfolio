@@ -16,12 +16,12 @@
     <nav>
       <a href="" class="logo">Portfolio</a>
       <img src="assets/menu.png" alt="" onclick="navtoggle()" />
-      <ul id="navlinks">
-        <li><a href="#home" class="link active">Home</a></li>
-        <!-- <li><a href="#about" class="link">About</a></li>
-        <li><a href="#skills" class="link">Skills</a></li> -->
-        <li><a href="#workssection" class="link">My Works</a></li>
-        <li><a href="#contact" class="link special">Contact</a></li>
+      <ul id="navlinks" >
+        <li><a href="#home" class="link active" onclick="closeNav()">Home</a></li>
+         <li><a href="#tools" class="link" onclick="closeNav()">Tools I use</a></li>
+        <!--<li><a href="#skills" class="link">Skills</a></li> -->
+        <li><a href="#workssection" class="link" onclick="closeNav()">My Works</a></li>
+        <li><a href="#contact" class="link special" onclick="closeNav()">Contact</a></li>
       </ul>
     </nav>
     <div class="bodysizer">
@@ -63,25 +63,30 @@
         </div>
       </section>
 
-      <!-- <section class="about" id="#about">
-        
+      <section class="tools" id="tools">
+        <h3>Tools I use</h3>
         <div class="tech-icons">
-          <div>
+          
             <img src="assets/wordpress.png" alt="">
           <img src="assets/php.png" alt="">
-          </div>
-          <div>
+          
+          <img src="assets/javascript.png" alt="">
             <img src="assets/react.png" alt="">
           <img src="assets/node-js.png" alt="">
-          </div>
+          <img src="assets/sass.png" alt="">
+          <img src="assets/mysql.png" alt="">
+          <img src="assets/mongo.svg" alt="">
+          <img src="assets/c-.png" alt="">
+          <img src="assets/java.png" alt="">
+          <img src="assets/photoshop.png" alt="">
+          <img src="assets/premiere.png" alt="">
+          
           
         </div>
-        <div class="about-content">
-          <h6>I design and develop websites and webapps using WordPress, ReactJs, PHP and NodeJs</h6>
-        </div>
+        
       </section>
 
-      <section class="skills" id="#skills">
+      <!-- <section class="skills" id="#skills">
         <div class="mainskills">
           <h5>My Skills</h5>
           <h6>HTML/CSS/SASS</h6>
@@ -170,13 +175,7 @@
           <a href="" target="_blank"><img src="assets/slack.svg" alt="" />Slack.com/me</a>
         </div>
         
-          
-          
-          
-          
-          
-          
-          
+ 
           
         </div>
       </section>

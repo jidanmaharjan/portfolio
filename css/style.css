@@ -164,7 +164,7 @@ a:hover {
 
 .home {
   max-width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,74 +280,48 @@ a:hover {
   }
 }
 
-.about {
+.tools {
   width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  min-height: 100vh;
   border-radius: .5rem;
-  margin: 5rem 0;
   background-color: #fff;
 }
 
-.about .tech-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 3rem;
-  width: 50%;
+.tools h3 {
+  text-align: center;
+  padding: 3rem 0;
+  padding-top: 7rem;
 }
 
-.about .tech-icons div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 3rem;
+.tools .tech-icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8rem;
 }
 
-.about .tech-icons img {
-  width: 15rem;
-}
-
-.about .about-content {
-  width: 50%;
-  padding: 5rem;
+.tools .tech-icons img {
+  max-width: 10rem;
 }
 
 @media (max-width: 800px) {
-  .about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 3rem;
+  .tools .tech-icons {
+    gap: 5rem;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .about .tech-icons {
-    width: 100%;
-    gap: 2rem;
-  }
-  .about .tech-icons img {
-    width: 10rem;
-  }
-  .about .about-content {
-    width: 100%;
-    padding: 2rem;
+  .tools .tech-icons img {
+    max-width: 8rem;
   }
 }
 

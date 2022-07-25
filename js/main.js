@@ -30,3 +30,8 @@ function navtoggle(){
     toggle=0;
   }
 }
+
+function closeNav(){
+  btnContainer.style.top= "-100%";
+  toggle=0;
+}
